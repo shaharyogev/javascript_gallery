@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gallery_css.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+</head>
+  <body>
+    <div calss="galleryJs container">
+      <div class="mainPhoto row">
+        <img id="mainPhoto" class="pMain" src="photos/1.jpg">
+          <div  class="clearBoxNext" onclick="nextImage(0)"></div>
+          <div  class="arrowNext " id="overNext" onclick="nextImage(0)" ></div>
+          <!-- The clearBox is for the convenient of the user, it makes the click space much bigger-->
+          <div  class="clearBoxBack" onclick="backImage()"></div>
+          <div  class="arrowBack"id="overBack"onclick="backImage()" ></div>
+          <div id="circleStrip" class="row">
+          <div id="circle" class="circle cl0"></div>
+        </div>
+      </div>
+        <!--The viewable section -->
+      <div  id="phtosStrip" class ="photosStrip row">
+        <div  id="clearBoxNextStrip" onclick="nextImage(0)">
+          <div  class="stripNext" id="stripNext" onclick="nextImage(0)" ></div>
+        </div>
+        <div  id="clearBoxBackStrip" onclick="backImage()">
+          <div  class=" stripBack" id="stripBack" onclick="backImage()" ></div>
+        </div>
+        <img id="p1" class ="p1 horizontalPhotos" src="photos/1.jpg" onclick="" data-photoid="p1">
+        <img id="p2" class ="p2 horizontalPhotos" src="photos/2.jpg" onclick="nextImage(0)" data-photoid="p2">
+        <img id="p3" class ="p3 horizontalPhotos" src="photos/3.jpg" onclick="nextImage(1)" data-photoid="p3">
+        <img id="p4" class ="p4 horizontalPhotos" src="photos/4.jpg" onclick="nextImage(2)"data-photoid="p4">
+        <img id="p5" class ="p5 horizontalPhotos" src="photos/5.jpg" onclick="nextImage(3)" data-photoid="p5">
+      </div>
+    </div>
+    <div id="swipeText">
+      <p class="text">Swipe right or left.</p>
+    </div>
+    <script  src= "jquery-3.3.1.min.js"></script>
+    <script  src= "gallery.js"></script>
+  </body>
+</html>
