@@ -1,4 +1,3 @@
-var srcIs = new Array(); //Current source.
 var photosCount = new Array(); //keeps all the photos.
 var count = 0; //The position of the photos for the main photo and the photo strip.
 var xx = 0; //keep it you will need it.
